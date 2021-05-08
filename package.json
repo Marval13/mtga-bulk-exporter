@@ -1,0 +1,24 @@
+{
+  "name": "mtga-bulk-export",
+  "version": "1.0.0",
+  "author": "David Qualcosa",
+  "main": "main.js",
+  "scripts": {
+    "build": "pkg . --out-path builds --targets latest-macos-x64,latest-win-x64"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "pkg": "^5.1.0"
+  },
+  "bin": "main.js",
+  "pkg": {
+    "options": [
+      "experimental-modules"
+    ]
+  },
+  "dependencies": {
+    "node-pause": "^1.0.1"
+  }
+}
